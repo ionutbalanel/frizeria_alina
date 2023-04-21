@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="frizerie, coafura, tuns, vopsit, salon" />
+    <meta
+      name="description"
+      content="La Frizeria Alina, oferim cele mai bune servicii de coafură, tuns și vopsit. Avem o vastă experiență în domeniu și garantăm că veți ieși din salon cu un look impecabil. Sunt mereu bucuroasă să vă întâmpin și să vă ofer cele mai bune servicii. Programați-vă acum!"
+    />
+    <title>Frizerie Alina</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/scissor-and-comb.png" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <!-- style sheet -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />    
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- javascript  -->
+    <script src="js/lightbox.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#home" class="navbar-brand">
+          <img src="images/logo.png" alt="Logo-ul Frizeriei Alina" class="navbar-logo" />
+        </a>
+        <div class="navbar-toggler">
+          <i class="fa-solid fa-bars" onclick="show()"></i>
+        </div>
+        <ul class="navbar-menu" id="side-menu">
+          <li class="navbar-item">
+            <a href="#despre" class="navbar-link" onclick="hide()">
+              Despre mine</a
+            >
+          </li>
+          <li class="navbar-item">
+            <a href="#preturi" class="navbar-link" onclick="hide()">Prețuri</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#galerie" class="navbar-link" onclick="hide()">Galerie</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#rezervari" class="navbar-link" onclick="hide()"
+              >Programări</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div id="home" class="home">
+      <div class="home-video-container">
+        <video
+          autoplay
+          muted
+          loop
+          src="resource/intro.mp4"
+          class="home-video"
+        ></video>
+      </div>
+      <div class="home-text-container">
+        <h1 class="home-title">Frizeria Alina</h1>
+        <p class="home-subtitle">
+          <span>îngrijire și răsfăț pentru părul tău!</span>
+        </p>
+        <div class="home-action">
+          <a href="#rezervari" class="read-more-link">Fă o programare </a>
+        </div>
+      </div>
+    </div>
+    <div id="despre" class="section">
+      <div class="content">
+        <div class="text-container">
+          <div class="text-inner">
+            <div class="text">
+              <p class="subtitle">De ce să alegeți serviciile mele?</p>
+              <h1 class="title">
+                Frizeria Alina - Locul de răsfăț al tuturor!
+              </h1>
+              <p class="description">
+                Aici vei găsi o ambianță plăcută și prietenoasă, unde te poți
+                relaxa și răsfața. Indiferent de vârstă sau gen, te invit să
+                experimentezi servicii de înfrumusețare de calitate,
+                personalizate nevoilor și preferințelor tale.
+              </p>
+              <div class="read-more">
+                <a class="read-more-link" href="pages/despre.html">
+                  ...citește mai mult</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="image-inner">
+              <img src="images/img1.jpg" alt="Un client mulțumit al Frizeriei Alina, cu părul recent coafat." class="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="preturi" class="section light-gray">
+      <div class="content">
+        <div class="text-container grid-container">
+          <div class="text-inner">
+            <div class="text">
+              <p class="subtitle">Servicii și prețuri</p>
+              <h1 class="title black">Pachet copii</h1>
+              <p class="description black">
+                Tuns + Aranjat + Loțiune Tonică: 50 LEI 
+              </br>
+              </br>
+                În afară de pachetul pentru copii, ofer și multe alte opțiuni de pachete de frezat,
+                fiecare cu servicii personalizate și prețuri avantajoase. Vă
+                încurajez să explorați toate opțiunile și să alegeți
+                pachetul care vi se potrivește cel mai bine.
+              </p>
+              <div class="read-more">
+                <a class="read-more-link" href="pages/preturi.html">
+                  Vezi toate prețurile
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="image-inner black-text">
+              <img src="images/img2.jpg" alt="Instrumente de coafat profesionale" class="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="galerie" class="gallery-container">
+      <div class="gallery-inner">
+        <h1 class="gallery-title">Galerie</h1>
+        <div class="image-grid">
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img4.jpg">
+              <img src="images/img4.jpg" alt="Un client cu o coafură modernă și elegantă realizată de frizeria Alina" class="image-thumbnail" />
+            </a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img4-1.jpg">
+              <img src="images/img4-1.jpg" alt="O imagine detaliată a unei împletituri de păr realizate de frizeria Alina" class="image-thumbnail" />
+            </a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img5.jpg">
+              <img src="images/img5.jpg" alt="Un client al Frizeriei Alina cu părul coafat, realizat cu abilitate și precizie de către frizeria Alina" class="image-thumbnail" />
+            </a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img5-1.jpg">
+              <img src="images/img5-1.jpg" alt="Un client al Frizeriei Alina cu părul proaspăt vopsit, cu o culoare frumoasă și uniformă, realizată cu abilitate și precizie de către frizeria Alina" class="image-thumbnail" />
+            </a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img6.jpg">
+              <img src="images/img6.jpg" alt="Un copil încântat după o vizită la Frizeria Alina, cu o nouă tunsoră modernă și confortabilă" class="image-thumbnail" />
+            </a>
+          </div>
+          <div data-aos="zoom-in" data-aos-delay="400" class="image-item">
+            <a href="images/img6-1.jpg">
+              <img src="images/img6-1.jpg" alt="O doamnă încântată cu o coafură elegantă și sofisticată realizată de către frizeria Alina" class="image-thumbnail" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="rezervari" class="section light-gray">
+      <div class="content">
+        <div class="text-container">
+          <div class="text-inner">
+            <div class="text">
+              <p class="subtitle">Rezervări</p>
+              <h1 class="title black">Programează-te rapid și ușor</h1>
+              <p class="description black">
+                În frizeria mea, ne încadrăm întotdeauna în programul tău și
+                respectăm cu strictețe orarul de tuns. De aceea, te invit să dai
+                click pe butonul de mai jos pentru a afla toate informațiile de
+                contact ale salonului meu.
+              </p>
+              <div class="read-more">
+                <a class="read-more-link" href="pages/rezervari.html">
+                  Programează-te</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="image-container">
+            <div class="image-inner black-text">
+              <img src="images/img3.jpg" alt="Imaginea conține apelarea numărului de telefon pentru programări la Frizeria Alina" class="image" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <section class="footer-section">
+          <div class="footer-info">
+            <a class="footer-brand" href="index.html">Frizeria Alina</a
+            ><small class="footer-copyright">
+              <div class="marquee">
+                <p>
+                  Acest website a fost realizat în cadrul competiției ”Tekwill
+                  Junior Ambassadors” organizată de proiectul ”Tekwill în
+                  Fiecare Școală” și nu reflectă neapărat opinia proiectului.
+                </p>
+              </div>
+            </small>
+            <div class="footer-social">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer-social-icon"
+              >
+                <i class="fa-brands fa-square-facebook"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer-social-icon"
+              >
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer-social-icon"
+              >
+                <i class="fa-brands fa-square-youtube"></i>
+              </a>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="footer-social-icon"
+              >
+                <i class="fa-brands fa-square-twitter"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="footer-social-icon"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
